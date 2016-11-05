@@ -5,7 +5,7 @@
 import requests
 
 data = {'token':'d50c95fd0c9f433de94c78b5f6001375', 'github':'https://github.com/galani3/api-registration.git'}
-response = requests.post("http://challenge.code2040.org/api", json = data)
+response = requests.post("http://challenge.code2040.org/api/register", json = data)
 if response.status_code == 400:
     print('Data was not passed')
 else:
